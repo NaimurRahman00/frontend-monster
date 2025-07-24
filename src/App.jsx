@@ -5,6 +5,7 @@ import Main from "./component/Main";
 import ShoppingList from "./component/ShoppingList";
 import Counter from "./Counter";
 import CounterReducer from "./CounterReducer";
+import CustomHook from "./CustomHook";
 import FocusInput from "./FocusInput";
 import Timer from "./Timer";
 import TodoList from "./TodoList";
@@ -21,7 +22,8 @@ const App = () => {
       {/* <CounterReducer/> */}
       {/* <FocusInput/> */}
       {/* <Footer/> */}
-      <Timer/>
+      {/* <Timer/> */}
+      <CustomHook/>
     </main>
   )
 };
