@@ -3,12 +3,13 @@ import Footer from "./component/Footer";
 import Header from "./component/Header";
 import Main from "./component/Main";
 import ShoppingList from "./component/ShoppingList";
-import Counter from "./Counter";
-import CounterReducer from "./CounterReducer";
-import CustomHook from "./CustomHook";
-import FocusInput from "./FocusInput";
-import Timer from "./Timer";
-import TodoList from "./TodoList";
+import Counter from "./component/Counter";
+import CounterReducer from "./component/CounterReducer";
+import CustomHook from "./component/CustomHook";
+import FocusInput from "./component/FocusInput";
+import Timer from "./component/Timer";
+import TodoList from "./component/TodoList";
+import UniqueId from "./component/UniqueId";
 
 const App = () => {
   return (
@@ -23,9 +24,10 @@ const App = () => {
       {/* <FocusInput/> */}
       {/* <Footer/> */}
       {/* <Timer/> */}
-      <CustomHook/>
+      {/* <CustomHook/> */}
+      {/* <UniqueId /> */}
     </main>
-  )
+  );
 };
 
 export default App;
