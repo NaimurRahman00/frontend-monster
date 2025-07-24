@@ -5,6 +5,7 @@ import Main from "./component/Main";
 import ShoppingList from "./component/ShoppingList";
 import Counter from "./Counter";
 import CounterReducer from "./CounterReducer";
+import FocusInput from "./FocusInput";
 import TodoList from "./TodoList";
 
 const App = () => {
@@ -16,8 +17,8 @@ const App = () => {
       {/* <TodoList/> */}
       {/* <ShoppingList/> */}
       {/* <CopyInput/> */}
-      <CounterReducer/>
-      
+      {/* <CounterReducer/> */}
+      <FocusInput/>
       {/* <Footer/> */}
     </main>
   )
