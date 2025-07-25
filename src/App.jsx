@@ -17,7 +17,7 @@ const App = () => {
       <Header />
       {/* <Main /> */}
       {/* <Counter/> */}
-      {/* <TodoList/> */}
+      <TodoList/>
       {/* <ShoppingList/> */}
       {/* <CopyInput/> */}
       {/* <CounterReducer/> */}
