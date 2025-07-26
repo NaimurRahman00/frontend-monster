@@ -10,6 +10,7 @@ import FocusInput from "./component/FocusInput";
 import Timer from "./component/Timer";
 import TodoList from "./component/TodoList";
 import UniqueId from "./component/UniqueId";
+import Meals from "./component/Meals";
 
 const App = () => {
   return (
@@ -17,7 +18,7 @@ const App = () => {
       <Header />
       {/* <Main /> */}
       {/* <Counter/> */}
-      <TodoList/>
+      {/* <TodoList/> */}
       {/* <ShoppingList/> */}
       {/* <CopyInput/> */}
       {/* <CounterReducer/> */}
@@ -26,6 +27,7 @@ const App = () => {
       {/* <Timer/> */}
       {/* <CustomHook/> */}
       {/* <UniqueId /> */}
+      <Meals/>
     </main>
   );
 };
