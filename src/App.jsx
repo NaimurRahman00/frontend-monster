@@ -11,11 +11,12 @@ import Timer from "./component/Timer";
 import TodoList from "./component/TodoList";
 import UniqueId from "./component/UniqueId";
 import Meals from "./component/Meals";
+import HiddenSearchBar from "./component/HiddenSearchBar";
 
 const App = () => {
   return (
     <main>
-      <Header />
+      {/* <Header /> */}
       {/* <Main /> */}
       {/* <Counter/> */}
       {/* <TodoList/> */}
@@ -27,7 +28,8 @@ const App = () => {
       {/* <Timer/> */}
       {/* <CustomHook/> */}
       {/* <UniqueId /> */}
-      <Meals/>
+      {/* <Meals/> */}
+      <HiddenSearchBar/>
     </main>
   );
 };
