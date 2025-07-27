@@ -12,6 +12,7 @@ import TodoList from "./component/TodoList";
 import UniqueId from "./component/UniqueId";
 import Meals from "./component/Meals";
 import HiddenSearchBar from "./component/HiddenSearchBar";
+import Form from "./component/Form";
 
 const App = () => {
   return (
@@ -29,7 +30,8 @@ const App = () => {
       {/* <CustomHook/> */}
       {/* <UniqueId /> */}
       {/* <Meals/> */}
-      <HiddenSearchBar/>
+      {/* <HiddenSearchBar/> */}
+      <Form/>
     </main>
   );
 };
