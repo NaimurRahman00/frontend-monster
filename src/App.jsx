@@ -15,14 +15,14 @@ import HiddenSearchBar from "./component/HiddenSearchBar";
 import Form from "./component/Form";
 import Nav from "./navigation/nav";
 import Products from "./products/Products";
-import Recommended from "./recommended/Recomended";
+import Recommended from "./recommended/Recommended";
 
 const App = () => {
   return (
     <main className="max-w-7xl m-auto">
       <Nav />
-      <Products />
       <Recommended/>
+      <Products />
 
       {/* <Header /> */}
       {/* <Main /> */}
