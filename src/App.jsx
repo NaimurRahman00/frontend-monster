@@ -19,7 +19,7 @@ import Recommended from "./recommended/Recomended";
 
 const App = () => {
   return (
-    <main>
+    <main className="max-w-7xl m-auto">
       <Nav />
       <Products />
       <Recommended/>
