@@ -17,7 +17,7 @@ import Form from "./component/Form";
 const App = () => {
   return (
     <main>
-      <Header />
+      {/* <Header /> */}
       {/* <Main /> */}
       {/* <Counter/> */}
       {/* <TodoList/> */}
