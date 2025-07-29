@@ -26,7 +26,7 @@ const Category = () => {
         >
           <input
             type="radio"
-            name="shoeType" // Same name for all radio buttons
+            name="shoeType" 
             id={option.id}
             checked={selectedOption === option.id}
             onChange={handleChange}

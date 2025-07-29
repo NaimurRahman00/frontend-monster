@@ -5,10 +5,10 @@ import Price from './price/Price'
 
 const Sidebar = () => {
   return (
-    <div className='fixed top-0 left-0 p-5'>
+    <div className='fixed top-0 left-0 p-5 space-y-5'>
       <Category />
-      <Colors />
       <Price />
+      <Colors />
     </div>
   );
 };
