@@ -16,12 +16,14 @@ import Form from "./component/Form";
 import Nav from "./navigation/nav";
 import Products from "./products/Products";
 import Recommended from "./recommended/Recommended";
+import Sidebar from "./sidebar/Sidebar";
 
 const App = () => {
   return (
-    <main className="max-w-7xl m-auto">
+    <main className="max-w-5xl m-auto">
+      <Sidebar />
       <Nav />
-      <Recommended/>
+      <Recommended />
       <Products />
 
       {/* <Header /> */}
