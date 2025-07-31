@@ -22,7 +22,7 @@ const Colors = () => {
   
   return (
     <div>
-      <h1 className="text-2xl font-semibold mb-3">Price</h1>
+      <h1 className="text-2xl font-semibold mb-3">Colors</h1>
       {colors.map((color) => (
         <label
           key={color.id}
