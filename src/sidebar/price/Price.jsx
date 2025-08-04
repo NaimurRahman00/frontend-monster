@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+const Price = ({handleChange, selectedCategory}) => {
+  // const [selectedPrice, setSelectedPrice] = useState("all");
 
-const Price = () => {
-  const [selectedPrice, setSelectedPrice] = useState("all");
-
-  const handleChange = (e) => {
-    setSelectedPrice(e.target.id);
-  };
+  // const handleChange = (e) => {
+  //   setSelectedPrice(e.target.id);
+  // };
 
   const priceRanges = [
     { id: "all", label: "All" },
@@ -27,7 +25,7 @@ const Price = () => {
             type="radio"
             name="priceRange" 
             id={range.id}
-            checked={selectedPrice === range.id}
+            checked={selectedCategory === range.id}
             onChange={handleChange}
           />
           <span>{range.label}</span>

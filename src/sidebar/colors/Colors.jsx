@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+const Colors = ({handleChange, selectedCategory}) => {
+  // const [selectedColor, setSelectedColor] = useState("all");
 
-const Colors = () => {
-  const [selectedColor, setSelectedColor] = useState("all");
-
-  const handleChange = (e) => {
-    setSelectedColor(e.target.id);
-  };
+  // const handleChange = (e) => {
+  //   setSelectedColor(e.target.id);
+  // };
 
   const colors = [
     { id: "all", label: "All", colorClass: "bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500" },
@@ -33,7 +31,7 @@ const Colors = () => {
             type="radio"
             name="colorFilter" 
             id={color.id}
-            checked={selectedColor === color.id}
+            checked={selectedCategory === color.id}
             onChange={handleChange}
             className="hidden" 
           />
@@ -41,7 +39,7 @@ const Colors = () => {
           <div className={`flex items-center gap-2`}>
             <div
               className={`w-5 h-5 rounded-full ${color.colorClass} ${
-                selectedColor === color.id
+                selectedCategory === color.id
                   ? "ring-2 ring-offset-2 ring-purple-600"
                   : ""
               }`}

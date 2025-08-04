@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+const Category = ({handleChange, selectedCategory}) => {
+  // const [selectedOption, setSelectedOption] = useState("all");
 
-const Category = () => {
-  const [selectedOption, setSelectedOption] = useState("all");
-
-  const handleChange = (e) => {
-    setSelectedOption(e.target.id);
-  };
+  // const handleChange = (e) => {
+  //   setSelectedOption(e.target.id);
+  // };
 
   const options = [
     { id: "all", label: "All" },
@@ -28,7 +26,7 @@ const Category = () => {
             type="radio"
             name="shoeType" 
             id={option.id}
-            checked={selectedOption === option.id}
+            checked={selectedCategory === option.id}
             onChange={handleChange}
           />
           <span>{option.label}</span>

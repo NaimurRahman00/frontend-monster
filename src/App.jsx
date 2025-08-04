@@ -63,24 +63,31 @@ const App = () => {
       );
     }
 
-    return filteredData.map(({ img, title, star, reviews, prevPrice }) => (
-      <Card
-        key={Math.random()}
-        img={img}
-        title={title}
-        star={star}
-        reviews={reviews}
-        prevPrice={prevPrice}
-      />
-    ));
+    return filteredProducts.map(
+      ({ img, title, reviews, newPrice, prevPrice }) => (
+        <Card
+          key={Math.random()}
+          img={img}
+          title={title}
+          reviews={reviews}
+          newPrice={newPrice}
+          prevPrice={prevPrice}
+        />
+      )
+    );
   };
 
+  const result = filteredData(data, selectedCategory, query);
+
   return (
-    <main className="max-w-5xl m-auto">
-      <Sidebar />
-      <Nav />
-      <Recommended />
-      <Products />
+    <main className="max-w-6xl m-auto">
+      <Sidebar
+        selectedCategory={selectedCategory}
+        handleChange={handleChange}
+      />
+      <Nav query={query} handleInputChange={handleInputChange} />
+      <Recommended handleClick={handleClick} />
+      <Products result={result} />
 
       {/* <Header /> */}
       {/* <Main /> */}

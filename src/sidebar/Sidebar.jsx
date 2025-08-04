@@ -3,12 +3,12 @@ import Category from './category/Category'
 import Colors from './colors/Colors'
 import Price from './price/Price'
 
-const Sidebar = () => {
+const Sidebar = ({handleChange, selectedCategory}) => {
   return (
     <div className='fixed top-0 left-0 p-5 space-y-5'>
-      <Category />
-      <Price />
-      <Colors />
+      <Category selectedCategory={selectedCategory} handleChange={handleChange}/>
+      <Price selectedCategory={selectedCategory} handleChange={handleChange}/>
+      <Colors selectedCategory={selectedCategory} handleChange={handleChange}/>
     </div>
   );
 };
