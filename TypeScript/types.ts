@@ -6,4 +6,4 @@ const person: Person = {
   name: 'Naimur'
 }
 
-console.log(person);
+console.log(person.name);
