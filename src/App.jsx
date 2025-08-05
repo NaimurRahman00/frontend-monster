@@ -29,8 +29,10 @@ const App = () => {
   const handleInputChange = (e) => {
     setQuery(e.target.value);
   };
-  const filteredItems = data.filter((product) =>
-    product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase() !== -1)
+  const filteredItems = data.filter(
+    (product) =>
+      product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase()) !==
+      -1
   );
 
   // RADIO FILTER
